@@ -9,7 +9,7 @@
 .wallpaper {
     width: 100%;
     height: 20rem;
-    background-image: url("putihCol.jpg");
+    background-image: url("image/putihCol.jpg");
     background-position: center;
     background-size: cover;
     display: flex;
@@ -64,7 +64,7 @@
 }
 
 .container .el1 {
-    background-image: url("biruCol.jpg");
+    background-image: url("image/biruCol.jpg");
     background-position: center;
     background-size: cover;
 }
@@ -74,7 +74,7 @@
 }
 
 .container .el2 {
-    background-image: url("hitamCol.jpg");
+    background-image: url("image/hitamCol.jpg");
     background-position: center;
     background-size: cover;
 
@@ -85,7 +85,7 @@
 }
 
 .container .el3 {
-    background-image: url("aritmatikaCol.jpg");
+    background-image: url("image/aritmatikaCol.jpg");
     background-position: center;
     background-size: cover;
 }
@@ -95,7 +95,7 @@
 }
 
 .container .el4 {
-    background-image: url("coklatCol.jpg");
+    background-image: url("image/coklatCol.jpg");
     background-position: center;
     background-size: cover;
 }
