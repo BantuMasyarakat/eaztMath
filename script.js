@@ -128,3 +128,66 @@ equal.addEventListener("click", () => {
 });
 
 // Deret Geometri
+let sukuS = document.getElementById("input1");
+let sukuD = document.getElementById("input2");
+let o1 = document.getElementById("o1");
+let o2 = document.getElementById("o2");
+let o3 = document.getElementById("o3");
+let o4 = document.getElementById("o4");
+
+let hitung = document.querySelector(".play");
+let h1 = document.getElementById("h1");
+let h2 = document.getElementById("h2");
+let h3 = document.getElementById("h3");
+
+
+let r1 = document.getElementById("resultO1");
+let r2 = document.getElementById("resultO2");
+let r3 = document.getElementById("resultO3");
+let rasio = document.getElementById("rasio");
+
+
+let r = 0;
+
+hitung.addEventListener("click", () => {
+    let suku1 = parseFloat(sukuS.value);
+    let suku2 = parseFloat(sukuD.value);
+
+    r = suku2/suku1;
+    rasio.innerHTML = suku2/suku1 === NaN ? "Rasio : 0" : "Rasio : " + suku2/suku1;
+});
+
+h1.addEventListener("click", () => {
+    if( r == 0 || rasio == NaN || o1.value == ""  ){
+        alert("Masukan suku dahulu!");
+    } else {
+        let opsi1 = parseInt(o1.value);
+        let suku1 = parseFloat(sukuS.value);
+    
+    r1.innerHTML = suku1*(Math.pow(r, opsi1)-1)/(r-1);
+    }
+});
+
+h2.addEventListener("click", () => {
+    if( r == 0 || o2.value == "" ){
+        alert("Masukan suku dahulu!");
+    } else {
+        let opsi2 = parseInt(o2.value);
+        let suku1 = parseFloat(sukuS.value);
+        
+        r2.innerHTML = suku1*Math.pow(r, opsi2 - 1);
+    }
+});
+
+h3.addEventListener("click", () => {
+    if( r == 0 || o3.value == "" || o4 == "" ){
+        alert("Masukan suku dahulu!");
+    } else {
+        let opsi3 = parseInt(o3.value);
+        let opsi4 = parseInt(o4.value);
+        let suku1 = parseFloat(sukuS.value);
+
+        r3.innerHTML = suku1*Math.pow(r, opsi3 - 1) + suku1*Math.pow(r, opsi4 - 1);
+    }
+});
+
