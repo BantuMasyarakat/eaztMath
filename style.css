@@ -115,6 +115,7 @@
     display: none;
 }
 
+
 .display {
     display: flex;
 }
@@ -323,4 +324,173 @@ div.geoCon {
     .geoCon .play {
         right: 22rem;
     }
+}
+
+/* input deret aritmatika */
+.bodyAr {
+    width: 70%;
+    height: 33rem;
+    display: grid;
+    justify-items: center;
+    align-items: center;
+    grid-template-columns: 80% 20%;
+    grid-template-rows: 15% 17% 8% 10% 10% 10% 10% 10% 10%;
+    grid-template-areas:
+        'suku1 suku1'
+        'suku2 suku2'
+        'hitung hitung'
+        'opsi htg'
+        'beda break'
+        'op1 h1'
+        'op2 h2'
+        'op3 h3'
+    ;
+}
+
+.bodyAr h6 {
+    border: 2px solid hsl(115, 89%, 51%);
+    padding: .2rem .5rem;
+    border-radius: 20px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.bodyAr h6:hover {
+    background-color: hsl(115, 89%, 51%);
+    color: white;
+}
+
+.bodyAr .satu {
+    grid-area: suku1;
+}
+
+.bodyAr .satu h6 {
+    border: 0;
+    text-align: center;
+    margin: 10px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.bodyAr .satu h6:hover {
+    background-color: white;
+    color: black;
+}
+
+.bodyAr .satu input {
+    text-align: center;
+    width: 15rem;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.bodyAr .dua {
+    grid-area: suku2;
+}
+
+.bodyAr .dua h6 {
+    border: 0;
+    text-align: center;
+    margin: 10px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.bodyAr .dua h6:hover {
+    background-color: white;
+    color: black;
+}
+
+.bodyAr .dua input {
+    text-align: center;
+    width: 15rem;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.bodyAr #hit {
+    grid-area: hitung;
+    background-color: white;
+    border: 2px solid hsl(115, 89%, 51%);
+    padding: .3rem .7rem;
+    border-radius: 20px;
+    font-size: .7em;
+    font-weight: bolder;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.bodyAr #hit:hover {
+    background-color: hsl(115, 89%, 51%);
+    color: white;
+}
+
+.bodyAr .op {
+    grid-area: opsi;
+    padding: .4rem 8rem;
+    border-bottom: 1px solid black;
+    border-top: 1px solid black;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.bodyAr .hi {
+    grid-area: htg;
+    padding: .4rem 1rem;
+    border-bottom: 1px solid black;
+    border-top: 1px solid black;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.bodyAr .beda {
+    grid-area: beda;
+    justify-self: left;
+    margin-left: .9rem;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.bodyAr .span {
+    grid-area: break;
+}
+
+.bodyAr .q1 {
+    grid-area: op1;
+    justify-self: left;
+    margin-left: .9rem;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+#i1 {
+    width: 3rem;
+}
+
+.bodyAr .q2 {
+    grid-area: op2;
+    margin-left: .9rem;
+    justify-self: left;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+#i2 {
+    width: 3rem;
+}
+
+.bodyAr .q3 {
+    grid-area: op3;
+    justify-self: left;
+    margin-left: .9rem;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+#i3 {
+    width: 3rem;
+}
+
+#i4 {
+    width: 3rem;
+}
+
+.bodyAr #h4 {
+    grid-area: h1;
+}
+
+.bodyAr #h5 {
+    grid-area: h2;
+}
+
+.bodyAr #h6 {
+    grid-area: h3;
 }

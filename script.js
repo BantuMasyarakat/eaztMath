@@ -1,7 +1,6 @@
 let basic = document.querySelector(".el1");
 let geometric = document.querySelector(".el2");
 let aritmatic = document.querySelector(".el3");
-let advance = document.querySelector(".el4");
 let basicT = document.querySelectorAll(".elThrust");
 
 basic.addEventListener("click", () => {
@@ -14,10 +13,6 @@ geometric.addEventListener("click", () => {
 
 aritmatic.addEventListener("click", () => {
     basicT[2].classList.toggle('display');
-});
-
-advance.addEventListener("click", () => {
-    basicT[3].classList.toggle('display');
 });
 
 // basic
@@ -191,3 +186,69 @@ h3.addEventListener("click", () => {
     }
 });
 
+// deret aritmatika
+let s1 = document.getElementById("s1");
+let s2 = document.getElementById("s2");
+let hit = document.getElementById("hit");
+
+let beda = document.querySelector(".beda");
+let i1 = document.getElementById("i1");
+let i2 = document.getElementById("i2");
+let i3 = document.getElementById("i3");
+let i4 = document.getElementById("i4");
+
+let h4 = document.getElementById("h4");
+let h5 = document.getElementById("h5");
+let h6 = document.getElementById("h6");
+
+let res1 = document.getElementById("res1");
+let res2 = document.getElementById("res2");
+let res3 = document.getElementById("res3");
+
+let b = 0;
+
+hit.addEventListener("click",() => {
+    let suk1 = parseFloat(s1.value);
+    let suk2 = parseFloat(s2.value);
+
+    b = suk2-suk1;
+    beda.innerHTML = `Beda : ${suk2-suk1}`;
+});
+
+h4.addEventListener("click", () => {
+    if( s1.value == "" || i1.value == "" || s2.value == "" || b == 0){
+        alert("Masukan suku terlebih dahulu!");
+    } else {
+        let suk1 = parseFloat(s1.value);
+        let in1 = parseInt(i1.value);
+
+        res1.innerHTML = suk1+(in1 - 1)*b;
+    }  
+});
+
+h5.addEventListener("click",() => {
+    if( s1.value == "" || i2.value == "" || s2.value == "" || b == 0){
+        alert("Masukan suku terlebih dahulu!");
+    } else {
+        let suk1 = parseFloat(s1.value);
+        let in2 = parseInt(i2.value);
+
+        let lat = 0;
+        for( let i = 0; i < in2; i++ ){
+            lat+=i;
+        }
+        res2.innerHTML = in2*suk1 + lat*b;
+    }
+});
+
+h6.addEventListener("click", () => {
+    if( s1.value == "" || i3.value == "" || i4.value == "" || s2.value == "" || b == 0){
+        alert("Masukan suku terlebih dahulu!");
+    } else {
+        let suk1 = parseFloat(s1.value);
+        let in3 = parseInt(i3.value);
+        let in4 = parseInt(i4.value);
+
+        res3.innerHTML = suk1+(in3 - 1)*b + suk1+(in4 - 1)*b;
+    }  
+});
